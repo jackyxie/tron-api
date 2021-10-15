@@ -1,13 +1,17 @@
 {
-    "name": "iexbase/tron-api",
+    "name": "jackyxie/tron-api",
     "description": "A PHP API for interacting with Tron (Trx)",
     "license": "MIT",
     "type":   "library",
-    "homepage": "https://github.com/iexbase/tron-api",
+    "homepage": "https://github.com/jackyxie/tron-api",
     "authors": [
         {
             "name": "Shamsudin Serderov",
             "email": "steein.shamsudin@gmail.com"
+        },
+        {
+            "name": "jackyxie",
+            "email": "jackyxie007@gmail.com"
         }
     ],
     "keywords": [
