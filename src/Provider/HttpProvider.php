@@ -171,7 +171,9 @@ class HttpProvider implements HttpProviderInterface
      */
     protected function decodeBody(StreamInterface $stream, int $status): array
     {
-        $decodedBody = json_decode($stream->getContents(),true);
+        //remove not utf8 standar chars
+        $utf8Body = mb_convert_encoding($stream->getContents(), 'utf8', 'utf8');
+        $decodedBody = json_decode($utf8Body, true);
 
         if((string)$stream == 'OK') {
             $decodedBody = [
